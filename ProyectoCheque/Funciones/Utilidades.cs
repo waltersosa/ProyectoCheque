@@ -43,7 +43,7 @@ namespace Funciones
                 string uni = res == 0 ? "" : " y " + getUnidades(res);
                 aux = decenas[x] + uni;
             }
-       
+
             return aux;
         }
         public static string getCentenas(int num)
