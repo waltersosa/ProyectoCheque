@@ -19,14 +19,13 @@ namespace Funciones
         private static string[] centenas = {"", "Cien", "Dosciento", "Treciento", 
         "Cuatrociento", "Quiniento", "Seisciento", "Sieteciento", "Ochociento", 
         "Noveciento" };
-        public static string getUnidades (int num)
+        public static string getUnidades(int num)
         {
             string aux = " ";
             aux = unidades[num];
             return aux;
         }
-
-        public static string getDecenas (int num)
+        public static string getDecenas(int num)
         {
             string aux = " ";
             int x = num / 10;
@@ -48,20 +47,28 @@ namespace Funciones
         }
         public static string getCentenas(int num)
         {
-            string aux = " ";
+            string aux = "";
             int x = num / 100;
             int res = num % 100;
-
-            //Si es de 0 a 19 salen las unidades que es el primer array
             if (num < 100)
 
-                aux = getUnidades(num);
+            return aux;
+        }
+        public static string getMil(int num)
+        {
+            string aux = "";
+            int x = num / 1000;
+            int res = num % 1000;
 
-            //Y si no salen las centenas que estan en el segundo array
+            if (num < 1000)
+            {
+                aux = getCentenas(num);
+            }
             else
             {
-                string dec = res == 0 ? "" : " y " + getUnidades(res) + " y " + getCentenas (res);
-                aux = decenas[x] + dec;
+                string mil = res == 0 ? "" : getCentenas(res) + " ";
+                string centenas = x > 1 ? getCentenas(x) + " " : " ";
+                aux = centenas + "mil" + " " + mil;
             }
 
             return aux;
