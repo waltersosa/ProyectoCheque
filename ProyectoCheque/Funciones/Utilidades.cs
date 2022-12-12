@@ -74,8 +74,7 @@ namespace Funciones
             int res = num % 1000;
 
             if (num < 1000)
-            {
-                aux = getCentenas(num);
+            { 
             }
             else
             {
@@ -83,7 +82,6 @@ namespace Funciones
                 string centenas = x > 1 ? getCentenas(x) + " " : " ";
                 aux = centenas + "Mil" + " " + mil;
             }
-
             return aux;
         }
         public static string getMillon(int num)
