@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -40,13 +41,25 @@ namespace ProyectoCheque
             //Validar que txt cantidad tenga valores  numericos con truParse
             //Validar que se haya ingresado el nombre
             int num = Int32.Parse(txtCantidad.Text);
-            string res = Funciones.Utilidades.getDecenas(num);
-            this.txtResultado.Text = res;
+            string res = Funciones.Utilidades.getMillon(num);
+            string nombre = this.txtNombre.Text;
+            this.txtResultado.Text = $"Pague se a orden de {nombre} la cantiadad de {res} dolares";
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtResultado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

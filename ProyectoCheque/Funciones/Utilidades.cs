@@ -13,11 +13,11 @@ namespace Funciones
         "Doce", "Trece", "Catorce", "Quince", "Diesiseis", "Diesiciete",
         "Diesiocho", "Diesinueve"};
 
-        private static string[] decenas = {"", "Diez", "Veinte", "Treinta", 
+        private static string[] decenas = {"", "Diez", "Veinte", "Treinta",
         "Cuarenta", "Cincuenta", "Sesenta", "Setenta", "Ochenta", "Noventa" };
 
-        private static string[] centenas = {"", "Cien", "Dosciento", "Treciento", 
-        "Cuatrociento", "Quiniento", "Seisciento", "Sieteciento", "Ochociento", 
+        private static string[] centenas = {"", "Cien", "Dosciento", "Treciento",
+        "Cuatrociento", "Quiniento", "Seisciento", "Sieteciento", "Ochociento",
         "Noveciento" };
         public static string getUnidades(int num)
         {
@@ -33,9 +33,9 @@ namespace Funciones
 
             //Si es de 0 a 19 salen las unidades que es el primer array
             if (num < 20)
-            
+
                 aux = getUnidades(num);
-  
+
             //Y si no salen las centenas que estan en el segundo array
             else
             {
@@ -51,6 +51,19 @@ namespace Funciones
             int x = num / 100;
             int res = num % 100;
             if (num < 100)
+            {
+                aux = getDecenas(num);
+            }
+            else if (num < 200)
+            {
+                string cen = res == 0 ? "" : "to " + getDecenas(res) + " ";
+                aux = centenas[x] + cen;
+            }
+            else
+            {
+                string cen = res == 0 ? "" : " " + getDecenas(res) + " ";
+                aux = centenas[x] + cen;
+            }
 
             return aux;
         }
@@ -68,7 +81,28 @@ namespace Funciones
             {
                 string mil = res == 0 ? "" : getCentenas(res) + " ";
                 string centenas = x > 1 ? getCentenas(x) + " " : " ";
-                aux = centenas + "mil" + " " + mil;
+                aux = centenas + "Mil" + " " + mil;
+            }
+
+            return aux;
+        }
+        public static string getMillon(int num)
+        {
+            string aux = "";
+            int x = num / 1000000;
+            int resto = num % 1000000;
+
+            if (num < 1000000)
+            {
+                aux = getMillon(num);
+            }
+            else
+            {
+                string mil = resto == 0 ? "" : getMillon(resto) + " ";
+                string centenas = x > 1 ? getMillon(x) + " " : "";
+                string millones = x > 1 ? "millón" + "es " : (getCentenas(x).Remove(getCentenas(x).Length - 1, 1)
+                    + " " + "millón");
+                aux = centenas + millones + " " + mil;
             }
 
             return aux;

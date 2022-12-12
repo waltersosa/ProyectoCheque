@@ -52,11 +52,13 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(178, 79);
             this.txtNombre.MaxLength = 50;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(335, 20);
+            this.txtNombre.Size = new System.Drawing.Size(335, 26);
             this.txtNombre.TabIndex = 1;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // label2
             // 
@@ -88,6 +90,7 @@
             // 
             // txtResultado
             // 
+            this.txtResultado.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResultado.Location = new System.Drawing.Point(178, 144);
             this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
@@ -95,6 +98,7 @@
             this.txtResultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtResultado.Size = new System.Drawing.Size(335, 56);
             this.txtResultado.TabIndex = 5;
+            this.txtResultado.TextChanged += new System.EventHandler(this.txtResultado_TextChanged);
             // 
             // btnProcesar
             // 
