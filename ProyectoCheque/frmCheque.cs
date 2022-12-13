@@ -32,7 +32,7 @@ namespace ProyectoCheque
         {
             if (this.txtCantidad.Text.Length == 0)
             {
-                MessageBox.Show("Por favor ingrese una cantidad");
+                MessageBox.Show("Por favor ingrese un nombre y una cantidad");
                 this.txtCantidad.Focus();
                 return;
 
@@ -41,7 +41,7 @@ namespace ProyectoCheque
             //Validar que txt cantidad tenga valores  numericos con truParse
             //Validar que se haya ingresado el nombre
             int num = Int32.Parse(txtCantidad.Text);
-            string res = Funciones.Utilidades.getMillon(num);
+            string res = Funciones.Utilidades.getCentenas(num);
             string nombre = this.txtNombre.Text;
             this.txtResultado.Text = $"Pague se a orden de {nombre} la cantiadad de {res} dolares";
 

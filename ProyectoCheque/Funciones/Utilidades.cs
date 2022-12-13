@@ -98,13 +98,13 @@ namespace Funciones
             {
                 string mil = resto == 0 ? "" : GetMillon(resto) + " ";
                 string centenas = x > 1 ? GetMillon(x) + " " : "";
-                string millones = x > 1 ? "millón" + "es " : 
-                (getCentenas(x).Remove(getCentenas(x).Length - 1, 1)
-                    + " " + "millón");
-                aux = centenas + millones + " " + mil;
+                string millon = x > 1 ? "millón" + "es " : 
+                (getCentenas(x).Remove(getCentenas(x).Length - 1, 1) + " " + "millón");
+                aux = centenas + millon + " " + mil;
             }
 
-            return aux; }
+            return aux; 
+        }
 
     }
 }
