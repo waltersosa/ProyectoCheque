@@ -84,7 +84,7 @@ namespace Funciones
             }
             return aux;
         }
-        public static string getMillon(int num)
+        public static string GetMillon(int num)
         {
             string aux = "";
             int x = num / 1000000;
@@ -92,19 +92,19 @@ namespace Funciones
 
             if (num < 1000000)
             {
-                aux = getMillon(num);
+                aux = GetMillon(num);
             }
             else
             {
-                string mil = resto == 0 ? "" : getMillon(resto) + " ";
-                string centenas = x > 1 ? getMillon(x) + " " : "";
-                string millones = x > 1 ? "millón" + "es " : (getCentenas(x).Remove(getCentenas(x).Length - 1, 1)
+                string mil = resto == 0 ? "" : GetMillon(resto) + " ";
+                string centenas = x > 1 ? GetMillon(x) + " " : "";
+                string millones = x > 1 ? "millón" + "es " : 
+                (getCentenas(x).Remove(getCentenas(x).Length - 1, 1)
                     + " " + "millón");
                 aux = centenas + millones + " " + mil;
             }
 
-            return aux;
-        }
+            return aux; }
 
     }
 }
