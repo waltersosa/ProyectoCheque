@@ -9,3 +9,14 @@ C:\Users\Soporte\Source\Repos\ProyectoCheque\ProyectoCheque\obj\Debug\ProyectoCh
 C:\Users\Soporte\Source\Repos\ProyectoCheque\ProyectoCheque\obj\Debug\ProyectoCheque.csproj.CoreCompileInputs.cache
 C:\Users\Soporte\Source\Repos\ProyectoCheque\ProyectoCheque\obj\Debug\ProyectoCheque.exe
 C:\Users\Soporte\Source\Repos\ProyectoCheque\ProyectoCheque\obj\Debug\ProyectoCheque.pdb
+C:\Users\Soporte\Downloads\adfgdagv\ProyectoCheque\bin\Debug\ProyectoCheque.exe.config
+C:\Users\Soporte\Downloads\adfgdagv\ProyectoCheque\bin\Debug\ProyectoCheque.exe
+C:\Users\Soporte\Downloads\adfgdagv\ProyectoCheque\bin\Debug\ProyectoCheque.pdb
+C:\Users\Soporte\Downloads\adfgdagv\ProyectoCheque\obj\Debug\ProyectoCheque.csproj.AssemblyReference.cache
+C:\Users\Soporte\Downloads\adfgdagv\ProyectoCheque\obj\Debug\ProyectoCheque.csproj.SuggestedBindingRedirects.cache
+C:\Users\Soporte\Downloads\adfgdagv\ProyectoCheque\obj\Debug\ProyectoCheque.frmCheque.resources
+C:\Users\Soporte\Downloads\adfgdagv\ProyectoCheque\obj\Debug\ProyectoCheque.Properties.Resources.resources
+C:\Users\Soporte\Downloads\adfgdagv\ProyectoCheque\obj\Debug\ProyectoCheque.csproj.GenerateResource.cache
+C:\Users\Soporte\Downloads\adfgdagv\ProyectoCheque\obj\Debug\ProyectoCheque.csproj.CoreCompileInputs.cache
+C:\Users\Soporte\Downloads\adfgdagv\ProyectoCheque\obj\Debug\ProyectoCheque.exe
+C:\Users\Soporte\Downloads\adfgdagv\ProyectoCheque\obj\Debug\ProyectoCheque.pdb

@@ -99,7 +99,7 @@ namespace Funciones
             {
                 string mil = res == 0 ? "" : getMill(res) + " ";
                 string cent = x > 1 ? getMill(x) + " " : "";
-                string espacio = x > 1 ? illon[0] + "es " : getCentenas(x).Remove(getCentenas(x).Length - 1, 1) + " " + millon[0];
+                string espacio = x > 1 ? millon[0] + "es " : getCentenas(x).Remove(getCentenas(x).Length - 1, 1) + " " + millon[0];
                 illon = cent + espacio + " " + mil;
 
 
