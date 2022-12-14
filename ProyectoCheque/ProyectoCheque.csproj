@@ -53,6 +53,7 @@
       <DependentUpon>frmCheque.cs</DependentUpon>
     </Compile>
     <Compile Include="Funciones\Utilidades.cs" />
+    <Compile Include="Funciones\ValidarNombre.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCheque.resx">

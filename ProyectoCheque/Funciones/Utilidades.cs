@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -102,9 +102,12 @@ namespace Funciones
                 string espacio = x > 1 ? illon[0] + "es " : getCentenas(x).Remove(getCentenas(x).Length - 1, 1) + " " + millon[0];
                 illon = cent + espacio + " " + mil;
 
+
             }
             return illon;
         }
+
+
 
 
 
